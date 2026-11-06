@@ -1,0 +1,45 @@
+name: dermasafe_app
+description: "DERMASAFE Digital Verification Card"
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.13.7
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+  http: ^1.1.0
+  shared_preferences: ^2.2.1
+  url_launcher: ^6.2.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+  flutter_launcher_icons: ^0.13.1
+  flutter_native_splash: ^2.4.0
+
+# ===== НАЛАШТУВАННЯ ІКОНКИ ДОДАТКУ =====
+flutter_launcher_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/img/logo/GLOBAL_TRUST.PNG"
+  min_sdk_android: 21
+  remove_alpha_ios: true
+  adaptive_icon_background: "#42947b"
+  adaptive_icon_foreground: "assets/img/logo/GLOBAL_TRUST.PNG"
+
+# ===== НАЛАШТУВАННЯ SPLASH SCREEN (ЕКРАН ЗАВАНТАЖЕННЯ) =====
+flutter_native_splash:
+  color: "#42947b"
+  image: assets/img/logo/GLOBAL_TRUST.PNG
+  android_12:
+    color: "#42947b"
+    image: assets/img/logo/GLOBAL_TRUST.PNG
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/img/logo/
